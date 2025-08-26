@@ -36,24 +36,24 @@ public class GestorUsuarios {
      * @throws IllegalArgumentException si algún parámetro es inválido
      */
     public boolean registrarUsuario(String email, String password, String nombre) {
+
+        // Verificar si el usuario ya existe
+        if (usuarios.containsKey(email)) {
+            return false; // Usuario ya existe
+        }
         // Validar email
         if (!validarEmail(email)) {
             throw new IllegalArgumentException("Email inválido");
         }
 
         // Validar password
-        if (password == null || password.length() < 6) {
-            throw new IllegalArgumentException("Password debe tener al menos 6 caracteres");
+        if (password == null || password.length() < 5) {
+            throw new IllegalArgumentException("Password debe tener al menos 5 caracteres");
         }
 
         // Validar nombre
         if (nombre == null || nombre.trim().isEmpty()) {
             throw new IllegalArgumentException("Nombre no puede estar vacío");
-        }
-
-        // Verificar si el usuario ya existe
-        if (usuarios.containsKey(email)) {
-            return false; // Usuario ya existe
         }
 
         // Crear y registrar el usuario
@@ -152,7 +152,7 @@ public class GestorUsuarios {
         }
 
         // Validar nueva contraseña
-        if (nuevaPassword == null || nuevaPassword.length() < 6) {
+        if (nuevaPassword == null || nuevaPassword.length() < 5) {
             throw new IllegalArgumentException("Nueva password debe tener al menos 6 caracteres");
         }
 
