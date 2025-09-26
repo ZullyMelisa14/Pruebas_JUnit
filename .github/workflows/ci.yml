@@ -1,5 +1,13 @@
 name: Taller automatización CI/CD
 
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
   lint:
     # Este job se llamará 'Linting con Checkstyle' en la interfaz de GitHub Actions
