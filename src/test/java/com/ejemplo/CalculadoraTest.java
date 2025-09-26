@@ -112,8 +112,7 @@ class CalculadoraTest {
         IllegalArgumentException excepcion = assertThrows(
                 IllegalArgumentException.class,
                 () -> calculadora.dividir(10.0, 0),
-                "Dividir por cero debe lanzar IllegalArgumentException"
-        );
+                "Dividir por cero debe lanzar IllegalArgumentException");
 
         // Verificamos el mensaje de la excepción
         assertEquals("No se puede dividir por cero", excepcion.getMessage());
@@ -171,8 +170,7 @@ class CalculadoraTest {
         IllegalArgumentException excepcion = assertThrows(
                 IllegalArgumentException.class,
                 () -> calculadora.raizCuadrada(-4.0),
-                "La raíz cuadrada de un número negativo debe lanzar excepción"
-        );
+                "La raíz cuadrada de un número negativo debe lanzar excepción");
 
         assertTrue(excepcion.getMessage().contains("negativo"));
     }
@@ -220,7 +218,7 @@ class CalculadoraTest {
 
     @ParameterizedTest
     @DisplayName("Pruebas múltiples de suma")
-    @ValueSource(doubles = {1.0, 2.0, 3.0, 4.0, 5.0})
+    @ValueSource(doubles = { 1.0, 2.0, 3.0, 4.0, 5.0 })
     void testSumaConVariosValores(double valor) {
         double resultado = calculadora.sumar(valor, valor);
         assertEquals(valor * 2, resultado, 0.001);

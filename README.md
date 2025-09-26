@@ -19,5 +19,3 @@ Aprender a diseñar, implementar y ejecutar pruebas unitarias en Java utilizando
 <img width="1471" height="457" alt="image" src="https://github.com/user-attachments/assets/e101fec2-6c96-41ad-a102-a44c3adc8d52" />
 
 <img width="1847" height="832" alt="image" src="https://github.com/user-attachments/assets/5bb4bd77-efb5-4ba0-9907-a808641f0f71" />
-
-
