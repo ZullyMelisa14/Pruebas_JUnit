@@ -14,9 +14,10 @@ public class Usuario {
 
     /**
      * Constructor de Usuario
-     * @param email Email único del usuario
+     * 
+     * @param email    Email único del usuario
      * @param password Contraseña del usuario
-     * @param nombre Nombre completo del usuario
+     * @param nombre   Nombre completo del usuario
      */
     public Usuario(String email, String password, String nombre) {
         this.email = email;
@@ -57,8 +58,10 @@ public class Usuario {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
         Usuario usuario = (Usuario) obj;
         return Objects.equals(email, usuario.email);
     }
