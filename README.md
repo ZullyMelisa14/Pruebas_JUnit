@@ -1,6 +1,6 @@
 **Taller Práctico de Calidad de Software en Java (Pruebas Unitarias)**
 
-**Integrantes:** Zully Melisa Beleño López, Jesus David Castellar Julio & Luis Daniel Torres Tomalá
+**Integrantes:** Zully Melisa Beleño López, Jesus David Castellar Julio, Andres Arcila Leal & Luis Daniel Torres Tomalá 
 
 **Objetivo**
 
